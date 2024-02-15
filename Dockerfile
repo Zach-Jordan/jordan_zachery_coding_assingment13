@@ -4,7 +4,7 @@ FROM node:latest AS development
 ENV NODE_ENV development
 
 # Set working directory
-WORKDIR /jordan_zachery_site
+WORKDIR /jordan_zachery_ui_garden
 
 # Copy package.json and package-lock.json into the container
 COPY package*.json ./
