@@ -6,7 +6,7 @@
 
   git clone https://github.com/Zach-Jordan/jordan_zachery_coding_assignment12
 
-  cd <repository-directory>
+  cd <repository-directory>d
 
 2. **Docker Commands**
 
