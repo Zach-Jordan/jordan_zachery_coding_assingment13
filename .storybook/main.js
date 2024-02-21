@@ -15,4 +15,10 @@ const config = {
     autodocs: "tag",
   },
 };
+
+module.exports = {
+  ...config,
+  port: 8083
+};
+
 export default config;

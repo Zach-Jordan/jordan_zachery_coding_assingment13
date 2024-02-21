@@ -19,4 +19,4 @@ COPY . .
 EXPOSE 8083
 
 # Run the web application
-CMD ["npm", "start"]
+CMD ["npm", "run", "storybook", "--", "--port", "8083"]
