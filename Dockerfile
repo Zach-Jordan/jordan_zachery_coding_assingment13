@@ -1,10 +1,8 @@
 # Use the official Node.js image as base
-FROM node:latest AS development
-
-ENV NODE_ENV development
+FROM node:latest
 
 # Set working directory
-WORKDIR /jordan_zachery_ui_garden
+WORKDIR /app
 
 # Copy package.json and package-lock.json into the container
 COPY package*.json ./
@@ -15,8 +13,8 @@ RUN npm install
 # Copy the rest of the project files into the container
 COPY . .
 
-# Expose port 7775
+# Expose port 8083 (the port used by Storybook)
 EXPOSE 8083
 
-# Run the web application
-CMD ["npm", "run", "storybook", "--", "--port", "8083"]
+# Run Storybook when the container starts
+CMD ["npm", "run", "storybook"]

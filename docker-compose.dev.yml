@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  storybook:
+    container_name: storybook_container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8083:8083"
