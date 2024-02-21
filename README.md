@@ -4,7 +4,7 @@
 
   Clone this repository to your local machine using the following command in terminal:
 
-  git clone https://github.com/Zach-Jordan/jordan_zachery_coding_assignment12.git
+  git clone https://github.com/Zach-Jordan/jordan_zachery_coding_assignment12
 
   cd <repository-directory>
 
