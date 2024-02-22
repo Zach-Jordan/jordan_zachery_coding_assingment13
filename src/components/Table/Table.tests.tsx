@@ -1,10 +1,10 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import Table from './Table';
-import TableHeader from './TableHeader';
-import TableRow from './TableRow';
-import TableCell from './TableCell';
-import TableFooter from './TableFooter';
+import React from 'react'
+import { render } from '@testing-library/react'
+import Table from './Table'
+import TableHeader from './TableHeader'
+import TableRow from './TableRow'
+import TableCell from './TableCell'
+import TableFooter from './TableFooter'
 
 test('Table is visible', () => {
   const { getByText } = render(
@@ -35,14 +35,14 @@ test('Table is visible', () => {
           <TableCell>F3</TableCell>
         </TableRow>
       </TableFooter>
-    </Table>
-  );
-  const headerElement = getByText(/Header 1/i);
-  const row1Element = getByText(/Row 1, Cell 1/i);
-  const row2Element = getByText(/Row 2, Cell 1/i);
-  const footerElement = getByText(/Footer 1/i);
-  expect(headerElement).toBeInTheDocument();
-  expect(row1Element).toBeInTheDocument();
-  expect(row2Element).toBeInTheDocument();
-  expect(footerElement).toBeInTheDocument();
-});
+    </Table>,
+  )
+  const headerElement = getByText(/Header 1/i)
+  const row1Element = getByText(/Row 1, Cell 1/i)
+  const row2Element = getByText(/Row 2, Cell 1/i)
+  const footerElement = getByText(/Footer 1/i)
+  expect(headerElement).toBeInTheDocument()
+  expect(row1Element).toBeInTheDocument()
+  expect(row2Element).toBeInTheDocument()
+  expect(footerElement).toBeInTheDocument()
+})

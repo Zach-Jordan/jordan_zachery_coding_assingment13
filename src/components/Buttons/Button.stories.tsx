@@ -1,6 +1,6 @@
-import React from 'react';
-import { Story, Meta } from '@storybook/react';
-import Button, { ButtonProps } from './Button';
+import React from 'react'
+import { Story, Meta } from '@storybook/react'
+import Button, { ButtonProps } from './Button'
 
 export default {
   title: 'Components/Button',
@@ -13,19 +13,19 @@ export default {
       control: 'color',
     },
   },
-} as Meta;
+} as Meta
 
-const Template: Story<ButtonProps> = (args) => <Button {...args} />;
+const Template: Story<ButtonProps> = (args) => <Button {...args} />
 
-export const Default = Template.bind({});
+export const Default = Template.bind({})
 Default.args = {
   text: 'Click me',
   backgroundColor: '#007bff',
-};
+}
 
-export const Disabled = Template.bind({});
+export const Disabled = Template.bind({})
 Disabled.args = {
   text: 'Disabled Button',
   backgroundColor: '#007bff',
   disabled: true,
-};
+}

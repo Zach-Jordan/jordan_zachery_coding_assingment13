@@ -1,6 +1,6 @@
-import React from 'react';
-import { Story, Meta } from '@storybook/react';
-import Card, { CardProps } from './Card';
+import React from 'react'
+import { Story, Meta } from '@storybook/react'
+import Card, { CardProps } from './Card'
 
 export default {
   title: 'Components/Card',
@@ -10,17 +10,17 @@ export default {
       control: 'text',
     },
   },
-} as Meta;
+} as Meta
 
-const Template: Story<CardProps> = (args) => <Card {...args} />;
+const Template: Story<CardProps> = (args) => <Card {...args} />
 
-export const Default = Template.bind({});
+export const Default = Template.bind({})
 Default.args = {
   children: <p>Card content</p>,
-};
+}
 
-export const Disabled = Template.bind({});
+export const Disabled = Template.bind({})
 Disabled.args = {
   children: <p>Disabled Card content</p>,
   disabled: true,
-};
+}

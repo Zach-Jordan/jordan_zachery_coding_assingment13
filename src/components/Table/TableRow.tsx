@@ -1,16 +1,14 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
 interface TableRowProps {
-  children: React.ReactNode;
+  children: React.ReactNode
 }
 
-const StyledTableRow = styled.tr`
-
-`;
+const StyledTableRow = styled.tr``
 
 const TableRow: React.FC<TableRowProps> = ({ children }) => {
-  return <StyledTableRow>{children}</StyledTableRow>;
-};
+  return <StyledTableRow>{children}</StyledTableRow>
+}
 
-export default TableRow;
+export default TableRow

@@ -1,4 +1,4 @@
 export interface RadioButtonProps {
-  label: string;
-  disabled?: boolean;
+  label: string
+  disabled?: boolean
 }

@@ -2,7 +2,7 @@
 FROM node:latest
 
 # Set working directory
-WORKDIR /app
+WORKDIR /jordan_zachery_ui_garden_build_checks
 
 # Copy package.json and package-lock.json into the container
 COPY package*.json ./
@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Expose port 8083 (the port used by Storybook)
-EXPOSE 8083
+EXPOSE 8018
 
 # Run Storybook when the container starts
 CMD ["npm", "run", "storybook"]

@@ -1,21 +1,21 @@
-import React from 'react';
-import { Story, Meta } from '@storybook/react';
-import Text, { TextProps } from './Text';
+import React from 'react'
+import { Story, Meta } from '@storybook/react'
+import Text, { TextProps } from './Text'
 
 export default {
   title: 'Components/Text',
   component: Text,
-} as Meta;
+} as Meta
 
-const Template: Story<TextProps> = (args) => <Text {...args} />;
+const Template: Story<TextProps> = (args) => <Text {...args} />
 
-export const Default = Template.bind({});
+export const Default = Template.bind({})
 Default.args = {
   content: 'This is Text',
-};
+}
 
-export const Disabled = Template.bind({});
+export const Disabled = Template.bind({})
 Disabled.args = {
   content: 'This is disabled Text',
   disabled: true,
-};
+}

@@ -1,16 +1,16 @@
-import React from 'react';
-import { Story, Meta } from '@storybook/react';
-import Table, { TableProps } from './Table';
-import TableHeader from './TableHeader';
-import TableRow from './TableRow';
-import TableCell from './TableCell';
-import TableFooter from './TableFooter';
+import React from 'react'
+import { Story, Meta } from '@storybook/react'
+import Table, { TableProps } from './Table'
+import TableHeader from './TableHeader'
+import TableRow from './TableRow'
+import TableCell from './TableCell'
+import TableFooter from './TableFooter'
 
 export default {
   title: 'Components/Table',
   component: Table,
   argTypes: {},
-} as Meta;
+} as Meta
 
 const Template: Story<TableProps> = (args) => (
   <Table {...args}>
@@ -41,12 +41,12 @@ const Template: Story<TableProps> = (args) => (
       </TableRow>
     </TableFooter>
   </Table>
-);
+)
 
-export const Default = Template.bind({});
-Default.args = {};
+export const Default = Template.bind({})
+Default.args = {}
 
-export const Disabled = Template.bind({});
+export const Disabled = Template.bind({})
 Disabled.args = {
   disabled: true,
-};
+}

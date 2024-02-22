@@ -1,23 +1,23 @@
-import React from 'react';
-import { Story, Meta } from '@storybook/react';
-import Img, { ImgProps } from './Img';
+import React from 'react'
+import { Story, Meta } from '@storybook/react'
+import Img, { ImgProps } from './Img'
 
 export default {
   title: 'Components/Img',
   component: Img,
-} as Meta;
+} as Meta
 
-const Template: Story<ImgProps> = (args) => <Img {...args} />;
+const Template: Story<ImgProps> = (args) => <Img {...args} />
 
-export const Default = Template.bind({});
+export const Default = Template.bind({})
 Default.args = {
   src: 'https://via.placeholder.com/150',
   alt: 'Placeholder Image',
-};
+}
 
-export const Disabled = Template.bind({});
+export const Disabled = Template.bind({})
 Disabled.args = {
   src: 'https://via.placeholder.com/150',
   alt: 'Placeholder Image',
   disabled: true,
-};
+}
